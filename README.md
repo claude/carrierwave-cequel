@@ -1,12 +1,16 @@
 # Carrierwave::Cequel
 
-TODO: Write a gem description
+This gem adds support for Cequel to CarrierWave, see the CarrierWave
+documentation for more detailed usage instructions.
+
+This gem is based off carrierwave-sequel:
+https://github.com/carrierwaveuploader/carrierwave-sequel
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'carrierwave-cequel'
+    gem 'carrierwave-cequel', :require => 'carrierwave/cequel'
 
 And then execute:
 
@@ -16,9 +20,6 @@ Or install it yourself as:
 
     $ gem install carrierwave-cequel
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
