@@ -25,11 +25,12 @@ Or install it yourself as:
 extend CarrierWave::Cequel in order to add the mount_uploader method to your class and then mount the uploader as normal
 
 ```
-class foo
+class Profile
   include Cequel::Record
   extend CarrierWave::Cequel
 
   key    :id, :timeuuid, auto: true
+  column :name, :text
   column :avatar, :text
 
   mount_uploader :avatar, AvatarUploader
