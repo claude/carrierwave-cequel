@@ -9,8 +9,8 @@ module CarrierWave
     def mount_uploader(column, uploader, options={}, &block)
       super
 
-      alias_method :read_uploader, :read_attribute
-      alias_method :write_uploader, :write_attribute
+      alias_method :read_uploader, :[]
+      alias_method :write_uploader, :[]=
       public :read_uploader
       public :write_uploader
 
