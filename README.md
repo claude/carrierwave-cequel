@@ -20,6 +20,24 @@ Or install it yourself as:
 
     $ gem install carrierwave-cequel
 
+## Usage
+
+extend CarrierWave::Cequel in order to add the mount_uploader method to your class and then mount the uploader as normal
+
+```
+class foo
+  include Cequel::Record
+  extend CarrierWave::Cequel
+
+  key    :id, :timeuuid, auto: true
+  column :avatar, :text
+
+  mount_uploader :avatar, AvatarUploader
+
+end
+```
+
+make sure to mount the uploader after you define the keys/columns, otherwise it will not be loaded.
 
 ## Contributing
 
