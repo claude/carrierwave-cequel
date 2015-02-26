@@ -1,7 +1,8 @@
 # Carrierwave::Cequel
 
-This gem adds support for Cequel (https://github.com/cequel/cequel) to CarrierWave, see the CarrierWave
-documentation for more detailed usage instructions.
+This gem adds support for Cequel (https://github.com/cequel/cequel) to CarrierWave (https://github.com/carrierwaveuploader/carrierwave).
+
+See the CarrierWave documentation for more detailed usage instructions.
 
 This gem is based off carrierwave-sequel:
 https://github.com/carrierwaveuploader/carrierwave-sequel
