@@ -23,7 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-extend CarrierWave::Cequel in order to add the mount_uploader method to your class and then mount the uploader as normal
+Extend CarrierWave::Cequel in order to add the mount_uploader method to your class and then mount the uploader as normal
 
 ```
 class Profile
@@ -35,7 +35,6 @@ class Profile
   column :avatar, :text
 
   mount_uploader :avatar, AvatarUploader
-
 end
 ```
 
